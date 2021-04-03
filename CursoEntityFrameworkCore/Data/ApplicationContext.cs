@@ -9,7 +9,7 @@ namespace CursoEFCore.Data
     public DbSet<Pedido> Pedidos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data source={localdb}\\mysqllocaldb;Initial Catalog=CursoEFCore; Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=127.0.0.1,1433;Database=efcurso;User Id=sa;Password=#Sudo#4321*;");
         }
 
        protected override void OnModelCreating(ModelBuilder modelBuilder)
